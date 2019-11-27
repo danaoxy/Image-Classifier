@@ -9,10 +9,10 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://drive.google.com/uc?export=download&id=11Eo3cu7pqfmkr3PATRf9D8ETSvAEAv8P'
+export_file_url = 'https://www.googleapis.com/drive/v3/files/1-7gJlY-jxpn8D9oF0yloFjIXeaiTPj3A?alt=media&key=AIzaSyC6hjbb8WViz_2nYEazzLG2NjII6gm8A7s'
 export_file_name = 'export.pkl'
 
-classes = ['aries','taurus','gemini','cancer', 'leo', 'virgo', 'libra', 'scorpio', 'sagittarius', 'capricorn', 'aquarius', 'pisces']
+classes = ['cardboard', 'glass', 'metal', 'paper', 'plastic', 'trash']
 path = Path(__file__).parent
 
 app = Starlette()
