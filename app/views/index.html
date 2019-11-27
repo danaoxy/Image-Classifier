@@ -3,14 +3,31 @@
   <meta charset='utf-8'>
   <link rel='stylesheet' href='../static/style.css'>
   <script src='../static/client.js'></script>
+  <style>
+    .row {  
+  display: flex;
+  flex-wrap: wrap;
+} 
+    .side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+  </style>
 </head>
 <body>
-<div>
-  <div class='center'>
-    <div class='title'>Classify Pokemon Images </div>
+<div class="row">
+  <div class="side">
+    <div class='title'>Is it recyclable or trash?</div>
     <p>
-      Use images of <strong>Lucario</strong> , <strong>Zoroark</strong>, <strong>Litwick</strong>, <strong>Pikachu</strong> or
-      all four!
+      Upload an image to find out!
     </p>
     <div class='content'>
       <div class='no-display'>
@@ -35,6 +52,9 @@
         <label id='result-label'></label>
       </div>
     </div>
+  </div>
+  <div class = "main">
+    <img src="https://www.waste360.com/sites/waste360.com/files/styles/article_featured_standard/public/recycling%20bins%20recyclables%20flying%20above-ts-680657646-1540.jpg?itok=T_GqsRXq" alt="Recyclables">
   </div>
 </div>
 </body>
