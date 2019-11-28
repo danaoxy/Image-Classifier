@@ -1,6 +1,7 @@
 <html lang='en'>
 <head>
   <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel='stylesheet' href='../static/style.css'>
   <script src='../static/client.js'></script>
   <!--<style>
@@ -12,6 +13,7 @@
   flex: 25%;
   background-color: #f1f1f1;
   padding: 20px;
+  text-align: center;
 }
 
 /* Main column */
@@ -25,8 +27,8 @@
 <body>
 <div class="row">
   <div class="side">
-    <div class='title'>Is it recyclable or trash?</div>
-    <p>
+    <h1 style="font-size:60px;">Is it recyclable or trash?</h1>
+    <p style="font-size:30px;">
       Upload an image to find out!
     </p>
     <div class='content'>
@@ -46,7 +48,7 @@
         <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
       </div>
       <div class='analyze'>
-        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()' style="colour:powder blue;">Classify</button>
       </div>
       <div class='result-label'>
         <label id='result-label'></label>
