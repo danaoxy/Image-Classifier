@@ -62,9 +62,9 @@ async def analyze(request):
     img = open_image(BytesIO(img_bytes))
     prediction = learn.predict(img)[0]
     if str(prediction) == 'trash':
-        return JSONResponse({'It is ' + str(prediction)})   
+        return JSONResponse({'It is ': str(prediction)})   
     else:
-        return JSONResponse({'It is ' + str(prediction) + ', which is recyclable!'})
+        return JSONResponse({'It is recyclable ': str(prediction)})
     
 
 
