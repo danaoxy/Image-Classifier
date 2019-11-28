@@ -61,7 +61,7 @@ async def analyze(request):
     img_bytes = await (img_data['file'].read())
     img = open_image(BytesIO(img_bytes))
     prediction = learn.predict(img)[0]
-    if prediction == 'trash':
+    if str(prediction) == 'trash':
         return JSONResponse({'It is ' + str(prediction)})   
     else:
         return JSONResponse({'It is ' + str(prediction) + ', which is recyclable!'})
