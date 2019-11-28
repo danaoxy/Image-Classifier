@@ -9,7 +9,7 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.googleapis.com/drive/v3/files/1-7gJlY-jxpn8D9oF0yloFjIXeaiTPj3A?alt=media&key=AIzaSyC6hjbb8WViz_2nYEazzLG2NjII6gm8A7s'
+export_file_url = 'https://drive.google.com/uc?export=download&id=1fUxzlbc27ijMihwrFm0TDOT0zBcNI-AR'
 export_file_name = 'export.pkl'
 
 classes = ['cardboard', 'glass', 'metal', 'paper', 'plastic', 'trash']
